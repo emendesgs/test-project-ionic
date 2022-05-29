@@ -1,3 +1,96 @@
+ion-content {
+  background-image: url(/src/assets/patterns/pokeball.svg);
+
+  .info-page {
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+
+    .title {
+      color: #17171B;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    .description {
+      color: #747476;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .searchBar {
+    --border-radius: 10px;
+    --background: #F2F2F2;
+  }
+
+  .card-images {
+
+    .img-texture {
+      position: absolute;
+      top: 5px;
+      left: 110px;
+      width: 74px;
+      height: 32px;
+    }
+
+    .img-pokemon {
+      position: absolute;
+      top: -25px;
+      left: 217px;
+      width: 140px;
+      height: 140px;
+    }
+
+    .img-pokeball {
+      position: absolute;
+      top: -17px;
+      left: 220px;
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  ion-card-content {
+    padding: 20px;
+    background-color: #8BBE8A;
+
+    .id-pokemon {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(23, 23, 27, 0.6);
+    }
+
+    .name-pokemon {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      color: #FFFFFF;
+    }
+
+    .chip-type {
+      background: #62B957;
+      border-radius: 3px;
+
+      .type-pokemon {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+
+  }
+
+}
+
 #container {
   text-align: center;
 

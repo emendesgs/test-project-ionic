@@ -1,20 +1,47 @@
-<ion-header [translucent]="true">
+<ion-content [fullscreen]="true">
   <ion-toolbar>
     <ion-title>
       Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="info-page">
+    <h1 class="title">Pokédex</h1>
+    <p class="description">
+      Search for Pokémon by name or using the National Pokédex number.
+    </p>
   </div>
+
+  <ion-searchbar class="searchBar" placeholder="What Pokémon are you looking for?"></ion-searchbar>
+
+  <div>
+    <ion-card style="border-radius: 10px;" (click)="goToProfilePage()">
+      <ion-card-content class="card-content">
+        <ion-card-subtitle class="id-pokemon">
+          #001
+        </ion-card-subtitle>
+        <ion-card-title class="name-pokemon">
+          Bulbasaur
+        </ion-card-title>
+        <ion-chip class="chip-type" >
+          <ion-icon name="pin"></ion-icon>
+          <ion-label class="type-pokemon" >Grass</ion-label>
+        </ion-chip>
+        <ion-chip class="chip-type" style="background: #A552CC;">
+          <ion-icon name="pin"></ion-icon>
+          <ion-label class="type-pokemon" >Poison</ion-label>
+        </ion-chip>
+        <div class="card-images">
+          <img class="img-texture" src="/assets/patterns/6x3.svg" >
+          <img class="img-pokeball" src="/assets/patterns/pokeball.svg" >
+          <img class="img-pokemon" src="/assets/generations/generation1/001.png">
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- <div id="container">
+    <ion-button (click)="goToProfilePage()"></ion-button>
+  </div> -->
 </ion-content>
